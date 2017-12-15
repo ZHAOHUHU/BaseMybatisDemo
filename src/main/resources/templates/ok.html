@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"></meta>
     <title>Insert title here</title>
+    <script src="../static/js/jquery-1.7.2.min.js" th:src="@{/js/jquery-1.7.2.min.js}"></script>
+    <!--<script src="../static/js/ok.js" th:src="@{/js/ok.js}"></script>-->
+    <script src="/js/ok.js" th:src="@{/js/ok.js}"></script>
 </head>
 <body>
-ok!
-<p th:text="${orders}">
-
-</p>
+ok你个小姐瑞!
+<!--<script th:inline="javascript" type="text/javascript">
+    $(document).ready(function (){
+        alert("aaa");
+    });
+</script>-->
+<button id="but" type="button">按钮</button>
 
 </body>
 </html>
