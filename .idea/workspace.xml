@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c805d792-2a54-47d6-8125-f6c5890e42fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.7.2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ok.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shenzhen/teamway/tms9000/portal/controller/OrdersController.java" afterPath="$PROJECT_DIR$/src/main/java/shenzhen/teamway/tms9000/portal/controller/OrdersController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ok.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/ok.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -480,7 +475,7 @@
       <workItem from="1513295763195" duration="8010000" />
       <workItem from="1513319750142" duration="2698000" />
       <workItem from="1513322834541" duration="4000" />
-      <workItem from="1513322870280" duration="6401000" />
+      <workItem from="1513322870280" duration="6438000" />
     </task>
     <task id="LOCAL-00001" summary="单表的list查询也ojbk了">
       <created>1513299948484</created>
@@ -489,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513299948484</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="jquery的ajax提交OK">
+      <created>1513331607159</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513331607159</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19705000" />
+    <option name="totallyTimeSpent" value="19742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="215" y="19" width="1602" height="1000" extended-state="0" />
@@ -566,7 +568,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="单表的list查询也ojbk了" />
-    <option name="LAST_COMMIT_MESSAGE" value="单表的list查询也ojbk了" />
+    <MESSAGE value="jquery的ajax提交OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="jquery的ajax提交OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
