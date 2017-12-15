@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="shenzhen.teamway.tms9000.portal.mapper.OrdersMapper" >
+  <resultMap id="BaseResultMap" type="shenzhen.teamway.tms9000.portal.domain.Orders" >
+    <id column="orderId" property="orderid" jdbcType="VARCHAR" />
+    <result column="orderNumber" property="ordernumber" jdbcType="VARCHAR" />
+    <result column="orderPrice" property="orderprice" jdbcType="INTEGER" />
+    <result column="pid" property="pid" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from orders
+    where orderId = #{orderid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="shenzhen.teamway.tms9000.portal.domain.Orders" >
+    insert into orders (orderId, orderNumber, orderPrice, 
+      pid)
+    values (#{orderid,jdbcType=VARCHAR}, #{ordernumber,jdbcType=VARCHAR}, #{orderprice,jdbcType=INTEGER}, 
+      #{pid,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="shenzhen.teamway.tms9000.portal.domain.Orders" >
+    update orders
+    set orderNumber = #{ordernumber,jdbcType=VARCHAR},
+      orderPrice = #{orderprice,jdbcType=INTEGER},
+      pid = #{pid,jdbcType=VARCHAR}
+    where orderId = #{orderid,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select orderId, orderNumber, orderPrice, pid
+    from orders
+    where orderId = #{orderid,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select orderId, orderNumber, orderPrice, pid
+    from orders
+  </select>
+</mapper>
